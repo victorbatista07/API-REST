@@ -1,0 +1,16 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "API Rest, NodeJS, Docker, Twelve Factors",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "author": "João Victor <joao.victor.zaga@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "restify": "^4.3.0",
+    "restify-plugins": "^1.4.0"
+  }
+}
