@@ -1,6 +1,6 @@
 Base de código: Github
 Dependencias: NPM
-Configurações: 
+Configurações: dotenv 
 Serviços de apoio:
 Build, Release and Run:
 Processos:
