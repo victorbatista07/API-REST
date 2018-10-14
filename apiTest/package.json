@@ -1,0 +1,15 @@
+{
+  "name": "desafio",
+  "version": "1.0.0",
+  "description": "A API in nodejs, using framework express and working with JSON ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "João Victor",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "map-factory": "^3.7.5"
+  }
+}
