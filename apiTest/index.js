@@ -2,13 +2,11 @@ var express = require('express');
 var app = express();
 
 app.get('/teste/:name', function (req, res, next) {
-  app.set('title', 'router name');
   res.json({ "user" :  req.params.name, "x": req.query.x});
   next();
 });
 
 app.get('/map', function(req, res, next){
-  app.set('title', 'router map');
   const createMapper = require("map-factory");
   const mapper = createMapper();
 
@@ -33,7 +31,7 @@ app.get('/map', function(req, res, next){
 
 app.use(function (req, res, next) {
   var now = new Date();
-  console.log("Data:", now.toLocaleDateString(), "Horas:", now.toLocaleTimeString(), "status code:", res.statusCode, "rota:", app.get('title'));
+  console.log("Data:", now.toLocaleDateString(), "Horas:", now.toLocaleTimeString(), "status code:", res.statusCode, "rota:", req.originalUrl);
   next();
 });
 
